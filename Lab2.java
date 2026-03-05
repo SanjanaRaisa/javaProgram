@@ -19,7 +19,7 @@ public class Lab2
   String myMonth;
 
   System.out.print("Please enter the year: ");
-  myYear = -sc.nextInt();
+  myYear = sc.nextInt();  //Fixed second syntax error
 
   a = myYear % 19;
   b = myYear / 100;
@@ -38,7 +38,7 @@ public class Lab2
   myMonth = MONTHS[mon - 1];
   myDay = ((h + l - 7 * m + 114) % 31) + 1;
 
-  System.out.println("Easter Sunday in " + myDay+ " is/was " +
+  System.out.println("Easter Sunday in " + myDay + " is/was " +
   myMonth + " " + myDay);
 
   sc.close();
